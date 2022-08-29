@@ -7,5 +7,5 @@ export interface Pagination {
 
 export class PaginatedResult<T> {
     result: T;  //T represents an array of memebers
-    pageination: Pagination;
+    pagination: Pagination;
 }
