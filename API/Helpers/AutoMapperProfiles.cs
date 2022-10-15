@@ -27,7 +27,7 @@ namespace API.Helpers
                 .ForMember(dest => dest.RecipientPhotoUrl, opt => opt.MapFrom(src =>
                      src.Recipient.Photos.FirstOrDefault(x => x.IsMain).Url));
 
-            // CreateMap<DateTime, DateTime>().ConvertUsing(d => DateTime.SpecifyKind(d, DateTimeKind.Utc));        note necessary anymore due to UtcDate Converter function in the DataContext
+            // CreateMap<DateTime, DateTime>().ConvertUsing(d => DateTime.SpecifyKind(d, DateTimeKind.Utc));       // note necessary anymore due to UtcDate Converter function in the DataContext
         }
     }
 }
